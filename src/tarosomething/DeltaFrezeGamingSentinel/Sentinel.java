@@ -18,7 +18,7 @@ public class Sentinel {
         //Never push the actual full code!
         jda.getPresence().setStatus(OnlineStatus.DO_NOT_DISTURB);
         jda.getPresence().setActivity(Activity.playing("Bot Pit Crew"));
-        //Testing DFG comitt
+        //Testing DFG comitt but in DFG
 
 jda.addEventListener(new Clear());
 
