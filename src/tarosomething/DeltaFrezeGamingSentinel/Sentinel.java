@@ -11,7 +11,7 @@ import javax.security.auth.login.LoginException;
 
 public class Sentinel {
     public static JDA jda;
-    public static String prefix = "D";
+    public static String prefix = "D ";
 
     public static void main(String[] args) throws LoginException {
         jda = new JDABuilder(AccountType.BOT).setToken("NjYyMDEyNzc5NTI3NjY3NzMy.Xh6ibA.7L_kFExtsVxvM06BPRl6aKyrpFA").build();
