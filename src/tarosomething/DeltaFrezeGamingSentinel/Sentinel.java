@@ -15,6 +15,7 @@ public class Sentinel {
 
     public static void main(String[] args) throws LoginException {
         jda = new JDABuilder(AccountType.BOT).setToken("NjYyMDEyNzc5NTI3NjY3NzMy.Xh6ibA.7L_kFExtsVxvM06BPRl6aKyrpFA").build();
+        //Never push the actual full code!
         jda.getPresence().setStatus(OnlineStatus.DO_NOT_DISTURB);
         jda.getPresence().setActivity(Activity.playing("Bot Pit Crew"));
 
