@@ -9,7 +9,7 @@ public class Programming extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
 
-        if(args[0].equalsIgnoreCase(Sentinel.prefix +"Programming")) {
+        if(args[0].equalsIgnoreCase(Sentinel.prefix +"ProgrammingAnnouncement")) {
 
             EmbedBuilder success = new EmbedBuilder();
             success.setColor(0x22ff2a);

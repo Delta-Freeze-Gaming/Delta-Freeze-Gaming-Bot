@@ -10,7 +10,7 @@ public class Media extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
 
-        if(args[0].equalsIgnoreCase(Sentinel.prefix +"Media")) {
+        if(args[0].equalsIgnoreCase(Sentinel.prefix +"MediaAnnouncement")) {
 
             EmbedBuilder success = new EmbedBuilder();
             success.setColor(0x22ff2a);
@@ -19,6 +19,14 @@ public class Media extends ListenerAdapter {
             success.setFooter("Director: Danika Pham");
             event.getChannel().sendMessage(success.build()).queue();
 
+
+        } else if (args[0].equalsIgnoreCase(Sentinel.prefix +"MediaUpdate")) {
+            EmbedBuilder success = new EmbedBuilder();
+            success.setColor(0x22ff2a);
+            success.setTitle("Media Team Update:");
+            success.setDescription("Media team! The day of action has almost here! Please finalize all advertising on personal pages, the team page, and other social medias for upcoming content! :D");
+            success.setFooter("Director: Danika Pham");
+            event.getChannel().sendMessage(success.build()).queue();
 
         }
 
