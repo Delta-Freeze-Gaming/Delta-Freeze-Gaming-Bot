@@ -14,7 +14,7 @@ public class Media extends ListenerAdapter {
 
             EmbedBuilder success = new EmbedBuilder();
             success.setColor(0x22ff2a);
-            success.setTitle("Media Team Update:");
+            success.setTitle("Media Team Announcement:");
             success.setDescription("Media team! Upcoming content has been announced with full details- please contact a Leadership member for any additional details, and please advertise before publishing day! :D");
             success.setFooter("Director: Danika Pham");
             event.getChannel().sendMessage(success.build()).queue();
