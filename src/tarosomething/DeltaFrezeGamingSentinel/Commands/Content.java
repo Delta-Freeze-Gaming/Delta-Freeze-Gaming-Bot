@@ -15,7 +15,7 @@ public class Content extends ListenerAdapter {
             success.setColor(0x22ff2a);
             success.setTitle("Content Team Announcement:");
             success.setDescription("Content team! Content has been shot/is going to be shot! Please work to edit, trim, and/or manage the content! :D");
-            success.setFooter("Director: Joshua Manansala");
+            success.setFooter("Director: Joshua Manansala  Manager: Kelly Choi");
             event.getChannel().sendMessage(success.build()).queue();
 
 
@@ -24,7 +24,7 @@ public class Content extends ListenerAdapter {
             success.setColor(0x22ff2a);
             success.setTitle("Content Team Update:");
             success.setDescription("Content team! Please try to ensure that all of the content is almost finished soon! :D");
-            success.setFooter("Director: Joshua Manansala");
+            success.setFooter("Director: Joshua Manansala  Manager: Kelly Choi");
             event.getChannel().sendMessage(success.build()).queue();
 
 
