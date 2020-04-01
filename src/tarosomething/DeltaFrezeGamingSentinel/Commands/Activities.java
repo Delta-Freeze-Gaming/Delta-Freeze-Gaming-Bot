@@ -15,7 +15,7 @@ public class Activities extends ListenerAdapter {
             success.setColor(0x22ff2a);
             success.setTitle("Activities Announcement:");
             success.setDescription("Activities Team! We are ready to start planning! Please have all details of plans, scheduling, dates, etc that's needed ready by Business and Hosting's day of action! :D");
-            success.setFooter("Director: Sam Tran");
+            success.setFooter("Director: Afraz Hameed");
             event.getChannel().sendMessage(success.build()).queue();
 
 
@@ -24,7 +24,7 @@ public class Activities extends ListenerAdapter {
             success.setColor(0x22ff2a);
             success.setTitle("Activities Update:");
             success.setDescription("Activities Team! Please try to ensure that all of the activity details are finished soon! :D");
-            success.setFooter("Director: Sam Tran");
+            success.setFooter("Director: Afraz Hameed");
             event.getChannel().sendMessage(success.build()).queue();
         }
 
