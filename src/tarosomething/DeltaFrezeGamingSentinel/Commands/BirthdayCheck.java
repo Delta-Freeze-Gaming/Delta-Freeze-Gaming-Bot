@@ -44,6 +44,7 @@ public class BirthdayCheck extends ListenerAdapter {
 // When adding new new birthdays and members: Add: arraylist.add(value) and arraylist.remove(int index)
 
         int key = 0;
+        int days = 0;
         System.out.print(formatter.format(localDate));
         if (args[0].equalsIgnoreCase(Sentinel.prefix + "BirthdayCheck")) {
             for (String birthday : birthdays) {
@@ -57,9 +58,16 @@ public class BirthdayCheck extends ListenerAdapter {
                     celebration.setDescription(recipient + ", thank you SO much for everything you do to help build our community, we hope that today celebrates an additonal fantastic year in your fantastic life!");
                     celebration.setFooter("To: " + recipient + " Love, the Delta Freeze Gaming Crew :)");
                     event.getChannel().sendMessage(celebration.build()).queue();
+                    days++;
                 }
                 System.out.println("The if statement has been skipped");
                 key++;
+            }
+            if (days == 0) {
+                EmbedBuilder celebration = new EmbedBuilder();
+                celebration.setColor(0x22ff2a);
+                celebration.setTitle("Nobody's birthday");
+                event.getChannel().sendMessage(celebration.build()).queue();
             }
         }
     }
